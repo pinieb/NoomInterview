@@ -4,8 +4,10 @@ import DataLayer
 class FoodLogViewModel: ObservableObject {
     private let graph: DependencyGraphProtocol
 
-    lazy private(set) var searchViewModel = SearchViewModel(graph: graph,
-                                                            addToLogHandler: addToLog)
+    var searchViewModel: SearchViewModel {
+        SearchViewModel(graph: graph,
+                        addToLogHandler: addToLog)
+    }
 
     @Published var foodLog = FoodLog()
 
