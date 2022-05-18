@@ -18,6 +18,8 @@
 		8253B0AE283316CB00F5A13E /* StyledNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B0AD283316CB00F5A13E /* StyledNavBar.swift */; };
 		8253B0B02833211200F5A13E /* FoodLogEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B0AF2833211200F5A13E /* FoodLogEntryView.swift */; };
 		8253B0B22833272800F5A13E /* SpotlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B0B12833272800F5A13E /* SpotlightButton.swift */; };
+		828F73682835556E00F72416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 828F73672835556E00F72416 /* LaunchScreen.storyboard */; };
+		828F736A2835560B00F72416 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F73692835560B00F72416 /* LaunchView.swift */; };
 		82A551D5282C5CDA00560CCF /* NoomInterviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A551D4282C5CDA00560CCF /* NoomInterviewApp.swift */; };
 		82A551D7282C5CDA00560CCF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A551D6282C5CDA00560CCF /* SearchView.swift */; };
 		82A551D9282C5CDC00560CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A551D8282C5CDC00560CCF /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		8253B0AD283316CB00F5A13E /* StyledNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledNavBar.swift; sourceTree = "<group>"; };
 		8253B0AF2833211200F5A13E /* FoodLogEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogEntryView.swift; sourceTree = "<group>"; };
 		8253B0B12833272800F5A13E /* SpotlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightButton.swift; sourceTree = "<group>"; };
+		828F73672835556E00F72416 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		828F73692835560B00F72416 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		82A551D1282C5CDA00560CCF /* NoomInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoomInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A551D4282C5CDA00560CCF /* NoomInterviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoomInterviewApp.swift; sourceTree = "<group>"; };
 		82A551D6282C5CDA00560CCF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -78,7 +82,6 @@
 		8216E85928352617000ED83F /* AppSupport */ = {
 			isa = PBXGroup;
 			children = (
-				82A551D8282C5CDC00560CCF /* Assets.xcassets */,
 				82A551D4282C5CDA00560CCF /* NoomInterviewApp.swift */,
 				8253B09A2832E81E00F5A13E /* DependencyGraph.swift */,
 			);
@@ -112,6 +115,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		828F73652835547200F72416 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82A551D8282C5CDC00560CCF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		82A551C8282C5CDA00560CCF = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +146,7 @@
 			children = (
 				8216E85628352332000ED83F /* DataLayer */,
 				8216E85928352617000ED83F /* AppSupport */,
+				828F73652835547200F72416 /* Resources */,
 				82A551E3282C607000560CCF /* ViewModels */,
 				82A551E2282C606500560CCF /* Views */,
 				82A551DA282C5CDC00560CCF /* Preview Content */,
@@ -159,6 +171,8 @@
 				82A551EC282C807500560CCF /* FoodDetailView.swift */,
 				8253B09D2832E9BD00F5A13E /* FoodLogView.swift */,
 				82A551D6282C5CDA00560CCF /* SearchView.swift */,
+				828F73672835556E00F72416 /* LaunchScreen.storyboard */,
+				828F73692835560B00F72416 /* LaunchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				828F73682835556E00F72416 /* LaunchScreen.storyboard in Resources */,
 				82A551DC282C5CDC00560CCF /* Preview Assets.xcassets in Resources */,
 				82A551D9282C5CDC00560CCF /* Assets.xcassets in Resources */,
 			);
@@ -247,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8216E85B28352768000ED83F /* EmptyStateText.swift in Sources */,
+				828F736A2835560B00F72416 /* LaunchView.swift in Sources */,
 				82A551D7282C5CDA00560CCF /* SearchView.swift in Sources */,
 				8253B0B22833272800F5A13E /* SpotlightButton.swift in Sources */,
 				8253B0A62833040A00F5A13E /* FoodColor+Extensions.swift in Sources */,
@@ -394,6 +410,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -423,6 +440,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
