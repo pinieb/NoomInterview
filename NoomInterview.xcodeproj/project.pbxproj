@@ -7,18 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8253B09B2832E81E00F5A13E /* DependencyGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B09A2832E81E00F5A13E /* DependencyGraph.swift */; };
+		8253B09E2832E9BD00F5A13E /* FoodLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B09D2832E9BD00F5A13E /* FoodLogView.swift */; };
+		8253B0A02832F2A400F5A13E /* FoodLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B09F2832F2A400F5A13E /* FoodLogViewModel.swift */; };
+		8253B0A22832F43D00F5A13E /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B0A12832F43D00F5A13E /* AppViewModel.swift */; };
+		8253B0A42833039B00F5A13E /* FoodColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B0A32833039B00F5A13E /* FoodColor.swift */; };
+		8253B0A62833040A00F5A13E /* FoodColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B0A52833040A00F5A13E /* FoodColor+Extensions.swift */; };
+		8253B0A928330DA300F5A13E /* DetailPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B0A828330DA300F5A13E /* DetailPair.swift */; };
+		8253B0AB2833140D00F5A13E /* FoodLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B0AA2833140D00F5A13E /* FoodLog.swift */; };
+		8253B0AE283316CB00F5A13E /* StyledNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B0AD283316CB00F5A13E /* StyledNavBar.swift */; };
+		8253B0B02833211200F5A13E /* FoodLogEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B0AF2833211200F5A13E /* FoodLogEntryView.swift */; };
+		8253B0B22833272800F5A13E /* SpotlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B0B12833272800F5A13E /* SpotlightButton.swift */; };
 		82A551D5282C5CDA00560CCF /* NoomInterviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A551D4282C5CDA00560CCF /* NoomInterviewApp.swift */; };
-		82A551D7282C5CDA00560CCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A551D6282C5CDA00560CCF /* ContentView.swift */; };
+		82A551D7282C5CDA00560CCF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A551D6282C5CDA00560CCF /* SearchView.swift */; };
 		82A551D9282C5CDC00560CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A551D8282C5CDC00560CCF /* Assets.xcassets */; };
 		82A551DC282C5CDC00560CCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A551DB282C5CDC00560CCF /* Preview Assets.xcassets */; };
+		82A551E7282C62E100560CCF /* FoodInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A551E6282C62E100560CCF /* FoodInfo.swift */; };
+		82A551E9282C651500560CCF /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A551E8282C651500560CCF /* SearchViewModel.swift */; };
+		82A551EB282C6BCA00560CCF /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A551EA282C6BCA00560CCF /* SearchService.swift */; };
+		82A551ED282C807500560CCF /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A551EC282C807500560CCF /* FoodDetailView.swift */; };
+		82A551F6282C975E00560CCF /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A551F5282C975E00560CCF /* SearchRequest.swift */; };
+		82A551FA282CA19900560CCF /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A551F9282CA19900560CCF /* NetworkRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8253B09A2832E81E00F5A13E /* DependencyGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyGraph.swift; sourceTree = "<group>"; };
+		8253B09D2832E9BD00F5A13E /* FoodLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogView.swift; sourceTree = "<group>"; };
+		8253B09F2832F2A400F5A13E /* FoodLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogViewModel.swift; sourceTree = "<group>"; };
+		8253B0A12832F43D00F5A13E /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		8253B0A32833039B00F5A13E /* FoodColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodColor.swift; sourceTree = "<group>"; };
+		8253B0A52833040A00F5A13E /* FoodColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodColor+Extensions.swift"; sourceTree = "<group>"; };
+		8253B0A828330DA300F5A13E /* DetailPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPair.swift; sourceTree = "<group>"; };
+		8253B0AA2833140D00F5A13E /* FoodLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLog.swift; sourceTree = "<group>"; };
+		8253B0AD283316CB00F5A13E /* StyledNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledNavBar.swift; sourceTree = "<group>"; };
+		8253B0AF2833211200F5A13E /* FoodLogEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogEntryView.swift; sourceTree = "<group>"; };
+		8253B0B12833272800F5A13E /* SpotlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightButton.swift; sourceTree = "<group>"; };
 		82A551D1282C5CDA00560CCF /* NoomInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoomInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A551D4282C5CDA00560CCF /* NoomInterviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoomInterviewApp.swift; sourceTree = "<group>"; };
-		82A551D6282C5CDA00560CCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		82A551D6282C5CDA00560CCF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		82A551D8282C5CDC00560CCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82A551DB282C5CDC00560CCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82A551E6282C62E100560CCF /* FoodInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInfo.swift; sourceTree = "<group>"; };
+		82A551E8282C651500560CCF /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		82A551EA282C6BCA00560CCF /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		82A551EC282C807500560CCF /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
+		82A551F5282C975E00560CCF /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		82A551F9282CA19900560CCF /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +66,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8253B0A728330D7100F5A13E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8253B0A828330DA300F5A13E /* DetailPair.swift */,
+				8253B0AF2833211200F5A13E /* FoodLogEntryView.swift */,
+				8253B0B12833272800F5A13E /* SpotlightButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8253B0AC283316AA00F5A13E /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				8253B0AD283316CB00F5A13E /* StyledNavBar.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		8253B0B32833326700F5A13E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8253B0A52833040A00F5A13E /* FoodColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		82A551C8282C5CDA00560CCF = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +111,13 @@
 		82A551D3282C5CDA00560CCF /* NoomInterview */ = {
 			isa = PBXGroup;
 			children = (
+				82A551F3282C973D00560CCF /* Networking */,
+				82A551E5282C609100560CCF /* Services */,
+				82A551E4282C608500560CCF /* Models */,
+				82A551E3282C607000560CCF /* ViewModels */,
+				82A551E2282C606500560CCF /* Views */,
 				82A551D4282C5CDA00560CCF /* NoomInterviewApp.swift */,
-				82A551D6282C5CDA00560CCF /* ContentView.swift */,
+				8253B09A2832E81E00F5A13E /* DependencyGraph.swift */,
 				82A551D8282C5CDC00560CCF /* Assets.xcassets */,
 				82A551DA282C5CDC00560CCF /* Preview Content */,
 			);
@@ -65,6 +130,56 @@
 				82A551DB282C5CDC00560CCF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		82A551E2282C606500560CCF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8253B0A728330D7100F5A13E /* Components */,
+				8253B0B32833326700F5A13E /* Extensions */,
+				8253B0AC283316AA00F5A13E /* ViewModifiers */,
+				82A551EC282C807500560CCF /* FoodDetailView.swift */,
+				8253B09D2832E9BD00F5A13E /* FoodLogView.swift */,
+				82A551D6282C5CDA00560CCF /* SearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		82A551E3282C607000560CCF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8253B0A12832F43D00F5A13E /* AppViewModel.swift */,
+				8253B09F2832F2A400F5A13E /* FoodLogViewModel.swift */,
+				82A551E8282C651500560CCF /* SearchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		82A551E4282C608500560CCF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8253B0A32833039B00F5A13E /* FoodColor.swift */,
+				82A551E6282C62E100560CCF /* FoodInfo.swift */,
+				8253B0AA2833140D00F5A13E /* FoodLog.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		82A551E5282C609100560CCF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82A551EA282C6BCA00560CCF /* SearchService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		82A551F3282C973D00560CCF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				82A551F9282CA19900560CCF /* NetworkRequest.swift */,
+				82A551F5282C975E00560CCF /* SearchRequest.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +252,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82A551D7282C5CDA00560CCF /* ContentView.swift in Sources */,
+				82A551D7282C5CDA00560CCF /* SearchView.swift in Sources */,
+				8253B0B22833272800F5A13E /* SpotlightButton.swift in Sources */,
+				8253B0A62833040A00F5A13E /* FoodColor+Extensions.swift in Sources */,
+				8253B0AB2833140D00F5A13E /* FoodLog.swift in Sources */,
+				82A551E7282C62E100560CCF /* FoodInfo.swift in Sources */,
+				8253B0A22832F43D00F5A13E /* AppViewModel.swift in Sources */,
+				82A551EB282C6BCA00560CCF /* SearchService.swift in Sources */,
+				8253B0B02833211200F5A13E /* FoodLogEntryView.swift in Sources */,
+				8253B0A42833039B00F5A13E /* FoodColor.swift in Sources */,
+				8253B0AE283316CB00F5A13E /* StyledNavBar.swift in Sources */,
+				82A551E9282C651500560CCF /* SearchViewModel.swift in Sources */,
+				82A551F6282C975E00560CCF /* SearchRequest.swift in Sources */,
 				82A551D5282C5CDA00560CCF /* NoomInterviewApp.swift in Sources */,
+				8253B09B2832E81E00F5A13E /* DependencyGraph.swift in Sources */,
+				8253B0A928330DA300F5A13E /* DetailPair.swift in Sources */,
+				8253B09E2832E9BD00F5A13E /* FoodLogView.swift in Sources */,
+				82A551FA282CA19900560CCF /* NetworkRequest.swift in Sources */,
+				82A551ED282C807500560CCF /* FoodDetailView.swift in Sources */,
+				8253B0A02832F2A400F5A13E /* FoodLogViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
