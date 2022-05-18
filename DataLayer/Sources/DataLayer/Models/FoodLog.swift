@@ -8,6 +8,16 @@ public struct FoodLog {
 
     public private(set) var entries: [Entry] = []
 
+    public var totalCalories: Int {
+        var sum = 0
+
+        entries.forEach { entry in
+            sum += entry.food.caloriesPerPortion
+        }
+
+        return sum
+    }
+
     public init() {}
 
     public mutating func add(food: FoodInfo) {

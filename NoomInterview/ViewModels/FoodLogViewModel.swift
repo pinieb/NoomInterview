@@ -11,6 +11,8 @@ class FoodLogViewModel: ObservableObject {
 
     @Published var foodLog = FoodLog()
 
+    var totalCalories: Int { foodLog.totalCalories }
+
     init(graph: DependencyGraphProtocol) {
         self.graph = graph
     }

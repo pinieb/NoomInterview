@@ -26,22 +26,27 @@ struct FoodLogView: View {
             if viewModel.foodLog.entries.isEmpty {
                 EmptyStateText("No food added yet")
             } else {
-                List(viewModel.foodLog.entries) { entry in
-                    NavigationLink(destination:
-                        FoodDetailView(item: entry.food,
-                                       buttonInfo: .init(text: "Remove",
-                                                         action: { viewModel.remove(entry) })
-                                      )
-                    ) {
-                        FoodLogEntryView(entry: entry)
-                    }
-                    .swipeActions(edge: .trailing,
-                                  allowsFullSwipe: false) {
-                        Button(action: { viewModel.remove(entry) }) {
-                            Label("Delete entry", systemImage: "trash.fill")
+                VStack {
+                    List(viewModel.foodLog.entries) { entry in
+                        NavigationLink(destination:
+                            FoodDetailView(item: entry.food,
+                                           buttonInfo: .init(text: "Remove",
+                                                             action: { viewModel.remove(entry) })
+                                          )
+                        ) {
+                            FoodLogEntryView(entry: entry)
                         }
-                        .tint(Color("RedFood"))
+                        .swipeActions(edge: .trailing,
+                                      allowsFullSwipe: false) {
+                            Button(action: { viewModel.remove(entry) }) {
+                                Label("Delete entry", systemImage: "trash.fill")
+                            }
+                            .tint(Color("RedFood"))
+                        }
                     }
+
+                    DetailPair(value: "\(viewModel.totalCalories)",
+                               label: "calories in this meal")
                 }
             }
 
