@@ -6,7 +6,7 @@ class SearchViewModel: ObservableObject {
     enum State {
         case start
         case searching
-        case list
+        case list(items: [FoodInfo])
         case error
     }
 
@@ -16,14 +16,16 @@ class SearchViewModel: ObservableObject {
     private var searchTask: Task<Void, Never>?
 
     @Published var state = State.start
-    @Published var isSearching = false
+
     @Published var searchText = "" {
+        willSet {
+            state = .searching
+        }
+
         didSet {
             beginSearch()
         }
     }
-
-    @Published var items = [FoodInfo]()
 
     init(graph: DependencyGraphProtocol,
          addToLogHandler: @escaping (FoodInfo) -> ()) {
@@ -35,8 +37,6 @@ class SearchViewModel: ObservableObject {
         searchTask?.cancel()
 
         guard searchText.count >= 3 else {
-            items = []
-            isSearching = false
             state = .start
 
             return
@@ -44,23 +44,15 @@ class SearchViewModel: ObservableObject {
 
         searchTask = Task {
             do {
-                DispatchQueue.main.async { [weak self] in
-                    self?.state = .searching
-                }
-
                 let newItems = try await searchService.search(for: searchText)
 
                 DispatchQueue.main.async { [weak self] in
-                    self?.items = newItems
+                    self?.state = .list(items: newItems)
                 }
             } catch {
                 DispatchQueue.main.async { [weak self] in
                     self?.state = .error
                 }
-            }
-
-            DispatchQueue.main.async { [weak self] in
-                self?.state = .list
             }
         }
     }

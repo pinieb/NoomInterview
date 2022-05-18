@@ -1,4 +1,5 @@
 import SwiftUI
+import DataLayer
 
 struct SearchView: View {
     @ObservedObject var viewModel: SearchViewModel
@@ -13,34 +14,48 @@ struct SearchView: View {
         }
     }
 
-    private var content: AnyView {
-        if viewModel.isSearching {
-            return AnyView(ProgressView())
+    @ViewBuilder
+    private var content: some View {
+        if case .searching = viewModel.state {
+            ProgressView()
+        } else if case let .list(items) = viewModel.state {
+            resultsView(items: items)
+        } else {
+            VStack {
+                EmptyStateText("Enter at least 3 characters")
+                Spacer()
+            }
         }
-
-        return AnyView(listView)
     }
 
-    private var listView: some View {
-        List(viewModel.items) { item in
-            NavigationLink(destination: {
-                FoodDetailView(item: item,
-                               buttonInfo: .init(text: "Add to log",
-                                                 action: { viewModel.addToLog(food: item) }))
-            }) {
-                    VStack(alignment: .leading) {
-                        Text(item.name)
-                        Text(item.brand)
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-                    }
+    @ViewBuilder
+    private func resultsView(items: [FoodInfo]) -> some View {
+        if items.isEmpty {
+            VStack {
+                EmptyStateText("No results for \"\(viewModel.searchText)\"")
+                Spacer()
             }
-            .swipeActions(edge: .leading,
-                          allowsFullSwipe: false) {
-                Button(action: { viewModel.addToLog(food: item) }) {
-                    Label("Add", systemImage: "plus")
+        } else {
+            List(items) { item in
+                NavigationLink(destination: {
+                    FoodDetailView(item: item,
+                                   buttonInfo: .init(text: "Add to log",
+                                                     action: { viewModel.addToLog(food: item) }))
+                }) {
+                        VStack(alignment: .leading) {
+                            Text(item.name)
+                            Text(item.brand)
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
                 }
-                .tint(item.color.viewColor)
+                .swipeActions(edge: .leading,
+                              allowsFullSwipe: false) {
+                    Button(action: { viewModel.addToLog(food: item) }) {
+                        Label("Add", systemImage: "plus")
+                    }
+                    .tint(item.color.viewColor)
+                }
             }
         }
     }

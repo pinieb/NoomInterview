@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8216E858283523E7000ED83F /* DataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 8216E857283523E7000ED83F /* DataLayer */; };
+		8216E85B28352768000ED83F /* EmptyStateText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216E85A28352768000ED83F /* EmptyStateText.swift */; };
 		8253B09B2832E81E00F5A13E /* DependencyGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B09A2832E81E00F5A13E /* DependencyGraph.swift */; };
 		8253B09E2832E9BD00F5A13E /* FoodLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B09D2832E9BD00F5A13E /* FoodLogView.swift */; };
 		8253B0A02832F2A400F5A13E /* FoodLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253B09F2832F2A400F5A13E /* FoodLogViewModel.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		8216E85028351DCE000ED83F /* NetworkEngine */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkEngine; sourceTree = "<group>"; };
 		8216E85628352332000ED83F /* DataLayer */ = {isa = PBXFileReference; lastKnownFileType = text; path = DataLayer; sourceTree = SOURCE_ROOT; };
+		8216E85A28352768000ED83F /* EmptyStateText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateText.swift; sourceTree = "<group>"; };
 		8253B09A2832E81E00F5A13E /* DependencyGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyGraph.swift; sourceTree = "<group>"; };
 		8253B09D2832E9BD00F5A13E /* FoodLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogView.swift; sourceTree = "<group>"; };
 		8253B09F2832F2A400F5A13E /* FoodLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogViewModel.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				8253B0A828330DA300F5A13E /* DetailPair.swift */,
+				8216E85A28352768000ED83F /* EmptyStateText.swift */,
 				8253B0AF2833211200F5A13E /* FoodLogEntryView.swift */,
 				8253B0B12833272800F5A13E /* SpotlightButton.swift */,
 			);
@@ -243,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8216E85B28352768000ED83F /* EmptyStateText.swift in Sources */,
 				82A551D7282C5CDA00560CCF /* SearchView.swift in Sources */,
 				8253B0B22833272800F5A13E /* SpotlightButton.swift in Sources */,
 				8253B0A62833040A00F5A13E /* FoodColor+Extensions.swift in Sources */,

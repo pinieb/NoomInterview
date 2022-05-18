@@ -24,11 +24,7 @@ struct FoodLogView: View {
     private var content: some View {
         VStack {
             if viewModel.foodLog.entries.isEmpty {
-                Text("No food added yet")
-                    .font(.callout)
-                    .italic()
-                    .foregroundColor(.secondary)
-                    .padding()
+                EmptyStateText("No food added yet")
             } else {
                 List(viewModel.foodLog.entries) { entry in
                     NavigationLink(destination:
