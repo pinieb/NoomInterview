@@ -1,3 +1,4 @@
+import DataLayer
 import SwiftUI
 
 extension FoodColor {

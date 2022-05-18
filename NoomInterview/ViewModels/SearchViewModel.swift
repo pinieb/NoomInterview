@@ -1,4 +1,5 @@
 import Combine
+import DataLayer
 import Foundation
 
 class SearchViewModel: ObservableObject {

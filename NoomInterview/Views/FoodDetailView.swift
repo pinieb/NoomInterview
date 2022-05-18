@@ -1,3 +1,4 @@
+import DataLayer
 import SwiftUI
 
 struct FoodDetailView: View {
@@ -44,7 +45,7 @@ struct FoodDetailView: View {
                                    label: "per portion")
                     }
 
-                    DetailPair(value: "\(item.calories) calories",
+                    DetailPair(value: "\(item.caloriesPerPortion) calories",
                                label: "per portion",
                                valueWeight: .bold)
                 }

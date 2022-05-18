@@ -1,3 +1,4 @@
+import DataLayer
 import SwiftUI
 
 struct FoodLogEntryView: View {

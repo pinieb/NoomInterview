@@ -1,4 +1,5 @@
 import Combine
+import DataLayer
 
 class FoodLogViewModel: ObservableObject {
     private let graph: DependencyGraphProtocol
